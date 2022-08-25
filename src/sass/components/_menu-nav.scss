@@ -18,7 +18,7 @@
 }
 
 .menu-nav__link{
-    color: #000000;
+    color: var(--color-black);
 
     @media screen and (min-width: 1280px) {  
         color: var(--main-color-text);
