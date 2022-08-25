@@ -4,6 +4,6 @@
     flex-wrap: wrap;
 }
 
-.card-set-iteam {
+.card-set-item {
     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
