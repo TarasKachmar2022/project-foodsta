@@ -1,0 +1,12 @@
+.footer{
+    padding: 60px 20px;
+    outline: 1px red;
+    border: solid 1px red;
+
+    @media screen and (min-width: 768px) {
+        padding: 100px 32px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 100px 16px;
+    }
+}
