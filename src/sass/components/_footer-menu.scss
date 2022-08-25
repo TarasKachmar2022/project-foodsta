@@ -16,7 +16,8 @@
     line-height: calc(12 / 10);
 
     text-decoration-line: underline;
-    color: #7EB101;
+    color: var(--color-link);
+    cursor: pointer;
 
     @media screen and (min-width: 768px){
         font-size: 12px;
@@ -28,6 +29,7 @@
     font-size: 10px;
     line-height: calc(12 / 10);
     color: var(--main-color-text);
+    text-align: center;
 
     margin-top: 40px;
 
