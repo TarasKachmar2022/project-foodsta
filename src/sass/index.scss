@@ -1,10 +1,16 @@
 // utils styles
 @import './utils/common';
+@import './utils/variables';
+@import './utils/visually-hidden';
 
 // base styles 
-
+@import './base/base';
+@import './base/reset';
 
 // components styles 
+@import './components/card-set';
+@import './components/container';
+@import './components/section';
 @import './components/header';
 @import './components/subscribe';
 @import './components/footer';
