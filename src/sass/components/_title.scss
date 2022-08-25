@@ -1,0 +1,17 @@
+.section-title{
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: calc(50 / 42);
+    color: var(--main-text-color);
+}
+        @media screen and (min-width: 1200px) {
+            font-size: 42px;
+            line-height: calc(50 / 42);
+            color: var(--main-text-color);
+        }
+}
