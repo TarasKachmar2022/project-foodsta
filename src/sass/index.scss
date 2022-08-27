@@ -3,11 +3,11 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-// base styles 
+// base styles
 @import './base/base';
 @import './base/reset';
 
-// components styles 
+// components styles
 @import './components/card-set';
 @import './components/container';
 @import './components/section';
@@ -20,8 +20,9 @@
 @import './components/title';
 @import './components/button';
 
-// layout styles 
+// layout styles
 @import './layout/hero';
 @import './layout/offerings';
 @import './layout/favorites';
 @import './layout/customers-say';
+
