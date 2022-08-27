@@ -1,0 +1,12 @@
+.offerings {
+  background-image: url(../images/offerings/back-mob.png);
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-width: 767px) {
+    background-image: url(../images/offerings/back-tab.png);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/offerings/back-desk.png);
+  }
+}
