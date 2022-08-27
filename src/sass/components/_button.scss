@@ -45,6 +45,7 @@
   border: 1px solid var(--color-link);
   min-width: 103px;
   font-family: 'Roboto', sans-serif;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -53,11 +54,13 @@
 }
 
 .btn-sub-modifire{
+  display: block;
   width: 103px;
   margin-left: auto;
   margin-top: 20px;
 
   @media screen and (min-width: 768px) {
     margin-top: 0px;
+    margin-left: 0px;
   }
 }
