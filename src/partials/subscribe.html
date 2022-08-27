@@ -1,23 +1,88 @@
-<!-- Good luck  -->
 <section class="subscribe">
   <div class="container">
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        @media="(min-width: 1200px)"
+        srcset="
+          ./images/subscribe/banana@1x_lg.webp 1x,
+          ./images/subscribe/banana@2x_lg.webp 2x,
+          ./images/subscribe/banana@3x_lg.webp 3x
+        "
+        type="image/webp"
+      />
+      <source
+        @media="(min-width: 1200px)"
+        srcset="
+          ./images/subscribe/banana@1x_lg.png 1x,
+          ./images/subscribe/banana@2x_lg.png 2x,
+          ./images/subscribe/banana@3x_lg.png 3x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/subscribe/banana@1x_md.webp 1x,
+          ./images/subscribe/banana@2x_md.webp 2x,
+          ./images/subscribe/banana@3x_md.webp 3x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/subscribe/banana@1x_md.png 1x,
+          ./images/subscribe/banana@2x_md.png 2x,
+          ./images/subscribe/banana@3x_md.png 3x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/subscribe/banana@1x_sm.webp 1x,
+          ./images/subscribe/banana@2x_sm.webp 2x,
+          ./images/subscribe/banana@3x_sm.webp 3x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/subscribe/banana@1x_sm.png 1x,
+          ./images/subscribe/banana@2x_sm.png 2x,
+          ./images/subscribe/banana@3x_sm.png 3x
+        "
+        type="image/png"
+      />
+      <img class="subscribe__image" alt="banana" width="281" height="136" />
+    </picture>
     <h2 class="subscribe__title section-title">
       Subscribe To Get Special Offers
     </h2>
     <p class="subscribe__descr">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
+      varius enim in&nbsp;eros elementum tristique.
     </p>
-    <form class="subscribe__form">
-      <label class="subscribe__label">
-        <input
-          class="subscribe__input"
-          type="email"
-          name="email"
-          placeholder="Email"
-        />
-      </label>
-      <button class="btn-sub" type="submit">Subscribe</button>
+    <form class="form">
+      <div class="form__wrapper">
+        <label class="form__label">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <span class="form__input--notification"
+            >&#9888; Not a valid email address (example@email.com)</span
+          >
+        </label>
+      </div>
+      <button class="btn btn--sub" type="submit">Subscribe</button>
     </form>
   </div>
 </section>
