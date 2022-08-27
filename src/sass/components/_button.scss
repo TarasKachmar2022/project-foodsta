@@ -51,3 +51,13 @@
     background-color: var(--yellow-main-color);
   }
 }
+
+.btn-sub-modifire{
+  width: 103px;
+  margin-left: auto;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
