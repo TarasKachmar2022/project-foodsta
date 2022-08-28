@@ -74,10 +74,20 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    // border-right: 1px solid var(--color-link);
     margin-top: auto;
 }
 
-.eviews-list__icon {
-    fill: yellow
+.reviews-list__desc {
+    border-right: 1px solid var(--color-link);
+    padding-right: 16px;
+}
+
+.reviews-list__icon-star {
+    fill: var(--yellow-main-color);
+}
+
+.reviews-list__wrap-icon {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 28px;
 }
