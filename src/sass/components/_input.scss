@@ -1,0 +1,15 @@
+.input-sub {
+    width: 279px;
+    height: 42px;
+    border: 1px solid var(--yellow-main-color);
+    border-radius: 30px;
+    background: var(--backgraund-color-second);
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: var(--color-text-input);
+    padding: 12px;
+
+    @media screen and (min-width: 768px) {
+        width: 395px;
+    }
+}
