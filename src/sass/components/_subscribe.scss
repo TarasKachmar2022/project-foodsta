@@ -1,8 +1,34 @@
-.subscribe__image {
-    margin-bottom: 17px;
-    @media screen and (max-width: 479px) {
-        margin-left: auto;
+.container--sub{
+    @media screen and (min-width: 1280px) {    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     }
+}
+.subscribe__image {
+    width: 161px;
+    height: 78px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    @media screen and (min-width: 480px) {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    @media screen and (min-width: 768px) {
+        width: 281px;
+        height: 136px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 546px;
+        height: 266px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
 }
 
 .subscribe__title {
@@ -12,14 +38,30 @@
 .subscribe__descr {
     margin-bottom: 40px;
 }
+.form {
+    @media screen and (min-width: 480px) {
+        display: flex;
+    }
+}
+.form__wrapper {
+    margin-bottom: 1px;
+    @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+    }
+}
 .form__input{
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 278px;
     border: 1px solid var(--yellow-main-color);
     border-radius: 30px;
     padding: 12px 11px;
     margin-bottom: 4px;
     background-color: transparent;
     outline: transparent;
+    @media screen and (min-width: 768px) {
+        width: 394px;
+    }
 }
 .form__input::placeholder {
     font-size: 12px;
@@ -39,6 +81,11 @@
     display: block;
     padding: 10px 22px;
     margin-left: auto;
+    max-width: 106px;
+    max-height: 42px;
+    @media screen and (min-width: 480px) {
+        margin-left: 18px;
+    }
 }
 .form__input--notification {
     font-size: 10px;
