@@ -10,6 +10,8 @@
   min-width: 100px;
   font-family: 'Roboto', sans-serif;
 
+  transition: background-color var(--transition);
+
   &:hover,
   :focus {
     background-color: var(--onhover-active-color);
@@ -28,6 +30,8 @@
   min-width: 130px;
   font-family: 'Roboto', sans-serif;
 
+  transition: border-color var(--transition);
+
   &:hover,
   :focus {
     border-color: var(--onhover-active-color-dark);
@@ -45,6 +49,8 @@
   border: 1px solid var(--color-link);
   min-width: 103px;
   font-family: 'Roboto', sans-serif;
+
+  transition: background-color var(--transition);
 
   &:hover,
   &:focus {
