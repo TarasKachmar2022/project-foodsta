@@ -59,6 +59,7 @@
     margin-bottom: 4px;
     background-color: transparent;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
         width: 394px;
     }
@@ -69,10 +70,10 @@
     border-color: var(--color-text-input);
 }
 .form__input:not(:placeholder-shown):required:valid {
-    border-color: green;
+    border-color: var(--color-link);
 }
 .form__input:not(:placeholder-shown):required:invalid {
-    border-color: red;
+    border-color: var(--input-eror);
 }
 .form__input:focus:invalid + .form__input--notification{
     opacity: 1;
@@ -83,6 +84,7 @@
     margin-left: auto;
     max-width: 106px;
     max-height: 42px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 480px) {
         margin-left: 18px;
     }
