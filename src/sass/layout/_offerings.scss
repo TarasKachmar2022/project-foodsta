@@ -1,13 +1,36 @@
 .offerings {
-  background-image: url(../images/offerings/back-mob.png);
+  background-image: url(../images/offerings/bg@1x_sm.png);
   background-position: center top;
   background-size: cover;
 
-  @media screen and (min-width: 767px) {
-    background-image: url(../images/offerings/back-tab.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/bg@2x_sm.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+    background-image: url(../images/offerings/bg@1x_md.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg@2x_md.png);
+    }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/offerings/back-desk.png);
+    padding-top: 177px;
+    background-image: url(../images/offerings/bg@1x_lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg@2x_lg.png);
+    }
   }
 }
 
@@ -23,6 +46,12 @@
   }
 }
 
+.offerings__img {
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 100%;
+  }
+}
 .offerings__img-list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -30,7 +59,6 @@
     justify-content: space-between;
     max-width: 704px;
     width: 100%;
-    margin-bottom: 60px;
   }
 }
 
@@ -50,6 +78,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 550px;
+    width: 100%;
   }
 }
 
@@ -58,78 +87,99 @@
   width: 100%;
 }
 
-.section-title {
-  margin-bottom: 28px;
-  text-align: center;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 20px;
-  }
-}
-
 .offerings__text {
-  display: block;
-  width: 272px;
-  height: 80px;
-  text-align: center;
+  margin-bottom: 28px;
 
-  @media screen and (min-width: 767px) {
-    width: 526px;
-    height: 175px;
-  }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     width: 500px;
-    height: 72px;
-  }
-}
-.offerins-list__text {
-  width: 252px;
-  height: 48px;
 
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
   @media screen and (min-width: 1280px) {
-    width: 253px;
-    height: 63px;
+    line-height: calc(24 / 16);
   }
 }
 
-.icon {
+.offerings__icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  fill: var(--color-link);
-  background-color: var(--backgraund-color-second);
 
-  .offerings__text {
+  background-color: var(--backgraund-color);
+  border-radius: 50%;
+
+  margin-bottom: 8px;
+}
+
+.offerins__icon {
+  fill: var(--color-link);
+}
+
+.offerings-list {
+  --indent: 28px;
+  --items: 1;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    --indent: 116px;
+    --items: 2;
     margin-bottom: 40px;
   }
 
-  .offerings-list {
-    --indent: 28px;
-    --items: 1;
-    margin-bottom: 28px;
+  @media screen and (min-width: 1280px) {
+    --indent: 67px;
+    --items: 2;
+  }
+}
 
-    @media screen and (min-width: 768px) {
-      --indent: 116px;
-      --items: 2;
-      margin-bottom: 40px;
-    }
+.offerings-list__title {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 16px;
 
-    @media screen and (min-width: 1280px) {
-      --indent: 67px;
-      margin-bottom: 32px;
-    }
+  @media screen and (min-width: 1280px) {
+    line-height: calc(25 / 18);
+  }
+}
+
+.offerings-list__text {
+  @media screen and (min-width: 1280px) {
+    line-height: calc(21 / 14);
+  }
+}
+
+.offerings__btn {
+  width: 106px;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  border: 2px solid var(--color-link);
+  margin-right: 24px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--onhover-active-color-dark);
+    background-color: var(--backgraund-color-second);
   }
 
-  .offerings__link {
-    font-size: 14px;
-    line-height: calc(20 / 14);
-    color: #000000;
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
+}
+.offerings__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 
-    @media screen and (min-width: 1280px) {
-      display: none;
-    }
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: var(--color-black);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
