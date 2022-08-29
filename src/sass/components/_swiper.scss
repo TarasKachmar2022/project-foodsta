@@ -1,0 +1,111 @@
+.swiper__container {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 89px;
+    right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+.swiper {
+  max-width: 320px;
+  max-height: 320px;
+
+  border: 14px solid var(--yellow-main-color);
+  border-radius: 50%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 580px;
+    max-height: 580px;
+
+    border: 26px solid var(--yellow-main-color);
+    border-radius: 50%;
+  }
+}
+
+.swiper__img {
+  max-width: 292px;
+  height: 292px;
+  width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 528px;
+    height: 528px;
+  }
+}
+
+.swiper__btn {
+  position: absolute;
+  z-index: 100;
+
+  width: 34px;
+  height: 28px;
+
+  background-color: var(--backgraund-color-second);
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+
+  transition: color var(--transition), box-shadow var(--transition);
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+
+    border-radius: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-link);
+  }
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.swiper__btn--prev {
+  top: 50%;
+  left: -8px;
+
+  @media screen and (min-width: 1280px) {
+    top: 50%;
+    left: -14px;
+  }
+}
+
+.swiper__btn--next {
+  top: 50%;
+  right: -8px;
+
+  @media screen and (min-width: 1280px) {
+    top: 50%;
+    right: -14px;
+  }
+}
+
+.swiper__icon {
+  fill: currentColor;
+
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 16px;
+    height: 29px;
+  }
+}
