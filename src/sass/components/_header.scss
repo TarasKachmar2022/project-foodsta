@@ -45,10 +45,14 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
+    @media screen and (min-width: 768px) {
+        margin-right: 28px;
+    }
 }
 .nav__list {
     display: flex;
     list-style: none;
+    gap: 28px;
 }
 .nav__link{
     text-decoration: none;
@@ -57,8 +61,6 @@
     &:hover,
     &:focus {
         color: var(--active-color);
-
-    
     }
 .nav__link--current {
     color: var(--active-color);
