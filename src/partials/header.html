@@ -25,6 +25,7 @@
       aria-expanded="false"
       aria-controls="mobile-menu"
       type="button"
+      data-menu-button
     >
       <svg
         class="menu-toggle__icon"
@@ -36,14 +37,24 @@
       </svg>
     </button>
     <!-- Mobile menu -->
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open" id="mobile-menu" data-menu>
       <nav class="mobile-nav">
         <ul class="mobile-nav__list">
-          <li class="mobile-nav__item">Home</li>
-          <li class="mobile-nav__item">About</li>
-          <li class="mobile-nav__item">Service</li>
-          <li class="mobile-nav__item">Menu</li>
-          <li class="mobile-nav__item">Contact</li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">About</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Service</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Menu</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
