@@ -1,4 +1,4 @@
-.container--sub{
+.container--changed{
     @media screen and (min-width: 1280px) {    
     display: flex;
     flex-direction: row-reverse;
@@ -78,7 +78,7 @@
 .form__input:focus:invalid + .form__input--notification{
     opacity: 1;
 }
-.subscribe .btn--sub{
+.btn--changed{
     display: block;
     padding: 10px 22px;
     margin-left: auto;
