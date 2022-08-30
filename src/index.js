@@ -57,21 +57,6 @@ const swiper = new Swiper('.swiper', {
   }
 })();
 
-// modal for offerings
-
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-opens]'),
-     modal: document.querySelector('[data-modals]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  
-  function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.modal.classList.toggle('backdrop--is-hidden');
-  }
-})();
 
 // Validation
 
