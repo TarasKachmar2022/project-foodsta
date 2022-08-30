@@ -30,7 +30,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    background-size: 100% 100%;
+    background-size: 785px 100%;
     background-position: bottom;
     background-image: url(../images/footer-fruits/fruits_tb.png);
     //   background-image: image-set(url('../images/hero_tb.webp') 1x);
@@ -45,7 +45,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    background-size: auto;
+    background-size: 1211px 266px;
     background-position: left 53px bottom;
     background-image: url(../images/footer-fruits/fruits_dt.png);
     // background-image: image-set(url('../images/hero_dt.webp') 1x);
@@ -120,6 +120,7 @@
 
   @media screen and (max-width: 767px) {
     align-items: flex-start;
+    padding-right: 22%;
   }
 
   @media screen and (min-width: 768px) {
@@ -133,7 +134,7 @@
 
 .footer__logo {
   @media screen and (max-width: 767px) {
-    margin-right: 81px;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 1280px) {
