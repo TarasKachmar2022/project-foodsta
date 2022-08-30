@@ -1,16 +1,3 @@
-// Swiper
-
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  navigation: {
-    nextEl: '.swiper__btn--next',
-    prevEl: '.swiper__btn--prev',
-  },
-});
-
-// Mobile
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');

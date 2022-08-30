@@ -21,11 +21,10 @@
     <!-- Button -->
     <button class="btn btn--nav" type="button">Order Now</button>
     <button
-      class="menu-toggle"
+      class="menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
       type="button"
-      data-menu-button
     >
       <svg
         class="menu-toggle__icon"
@@ -37,7 +36,12 @@
       </svg>
     </button>
     <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobile-menu" data-menu>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn js-close-menu" type="button">
+        <svg class="mobile-menu__cross" width="24" height="24">
+          <use href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
       <nav class="mobile-nav">
         <ul class="mobile-nav__list">
           <li class="mobile-nav__item">
