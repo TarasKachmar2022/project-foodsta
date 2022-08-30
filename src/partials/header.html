@@ -1,1 +1,62 @@
-<!-- Good luck  -->
+<header class="header">
+  <div class="container header-container">
+    <!-- Logo -->
+    <a class="logo" href="./index.html">
+      <svg width="71" height="52">
+        <use href="./images/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current" href="./index.html">Home</a>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Service</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Menu</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Button -->
+    <button class="btn btn--nav" type="button">Order Now</button>
+    <button
+      class="menu-toggle"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+      data-menu-button
+    >
+      <svg
+        class="menu-toggle__icon"
+        width="28"
+        height="28"
+        aria-label="Переключатель мобільного меню"
+      >
+        <use href="./images/sprite.svg#mobile-menu"></use>
+      </svg>
+    </button>
+    <!-- Mobile menu -->
+    <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">About</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Service</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Menu</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
