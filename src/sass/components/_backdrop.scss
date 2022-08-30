@@ -11,8 +11,7 @@
 
   opacity: 1;
   visibility: visible;
-  transition: opacity var(--transition-basic),
-    visibility var(--transition-basic);
+  transition: opacity var(--transition), visibility var(--transition);
   overflow-y: scroll;
 }
 .backdrop--is-hidden {

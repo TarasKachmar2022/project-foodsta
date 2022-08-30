@@ -44,12 +44,17 @@ const swiper = new Swiper('.swiper', {
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
+    openModalBtnO: document.querySelector('[data-modal-offerings]'),
+     openModalBtnH: document.querySelector('[data-modal-header]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnO.addEventListener('click', toggleModal);
+   refs.openModalBtnH.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  
 
   function toggleModal() {
     document.body.classList.toggle('modal-open');
@@ -98,13 +103,14 @@ validation
         const phone = selector.inputmask.unmaskedvalue();
         return Boolean(Number(phone) && phone.length > 0);
       },
-      errorMessage: ' This phone must be in the format  099 000 00 00',
+      errorMessage: 'This phone must be in the format  099 000 00 00',
     },
     {
       validator: value => {
         const phone = selector.inputmask.unmaskedvalue();
         return Boolean(Number(phone) && phone.length === 11);
       },
-      errorMessage: ' This phone must be in the format  099 000 00 00',
+      errorMessage: 'This phone must be in the format  099 000 00 00',
     },
   ]);
+
