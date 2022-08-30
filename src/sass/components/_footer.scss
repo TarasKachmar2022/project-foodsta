@@ -49,6 +49,14 @@
     background-position: left 53px bottom;
     background-image: url(../images/footer-fruits/fruits_dt.png);
     // background-image: image-set(url('../images/hero_dt.webp') 1x);
+    background-size: 110px 116px,
+        253px 66px,
+        104px 259px;
+    background-repeat: no-repeat;
+    background-position: left 0 top 132px,
+       center bottom 0,
+        right 0 top 0;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -213,4 +221,5 @@
     gap: 12px;
     margin-top: 12px;
   }
+
 }
