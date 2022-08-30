@@ -1,18 +1,16 @@
 .subscribe{
     position: relative;
     @media screen and (max-width: 767px) {
-        padding-bottom: 60px;
+        padding-bottom: 15px;
         top: -45px;
     }
     @media screen and (min-width: 768px) {
-        padding-bottom: 100px;
+        padding-bottom: 17px;
         top: -83px;
     }
     @media screen and (min-width: 1280px) {
-        padding-bottom: 64px;
         top: -73px;
     }
-    
 }
 .subscribe__box{
     @media screen and (min-width: 1280px) {    
@@ -45,10 +43,11 @@
     margin-bottom: 20px;
 }
 .subscribe__descr {
+    max-width: 656px;
     margin-bottom: 40px;
 }
 .form {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         display: flex;
     }
 }
@@ -61,7 +60,7 @@
 .form__input{
     display: block;
     margin: 0 auto;
-    width: 279px;
+    width: 100%;
     border: 1px solid var(--yellow-main-color);
     border-radius: 30px;
     padding: 12px;
@@ -70,7 +69,7 @@
     outline: transparent;
     transition: border-color var(--transition);
     @media screen and (min-width: 768px) {
-        width: 394px;
+        width: 395px;
     }
 }
 .form__input::placeholder {
@@ -84,9 +83,14 @@
 .form__input:not(:placeholder-shown):required:invalid {
     border-color: var(--input-eror);
 }
-// .form__input:focus:invalid + .form__input--notification
 .form__input:not(:placeholder-shown):required:invalid +.form__input--notification{
     opacity: 1;
+}
+.form__input--notification {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--input-eror);
+    opacity: 0;
 }
 .btn.btn--changed{
     display: block;
@@ -95,13 +99,7 @@
     max-width: 106px;
     max-height: 42px;
     transition: background-color var(--transition);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         margin-left: 18px;
     }
-}
-.form__input--notification {
-    font-size: 10px;
-    line-height: 1.5;
-    color: var(--input-eror);
-    opacity: 0;
 }
