@@ -1,18 +1,18 @@
+.header{
+    box-shadow: 0px 4px 24px 0px #6969691A;
+}
 .header-container {
     position: relative;
     display: flex;
-    box-shadow: 0px 4px 24px 0px #6969691A;
     @media screen and (max-width: 767px) {
         justify-content: space-between;
-    }
-    @media screen and (max-width: 1279px) {
-        margin-bottom: 60px;
     }
     @media screen and (min-width: 768px) {
         align-items: center;
     }
 }
 .menu-toggle {
+    margin: 22px 0 22px auto;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -20,10 +20,6 @@
     fill: var(--color-link);
     cursor: pointer;
     transition: fill var(--transition);
-    @media screen and (max-width: 767px) {
-        display: flex;
-        width: 100%;
-    }
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -33,6 +29,7 @@
     }
 }
 .mobile-menu {
+    position: relative;
     display: none;
     overflow: auto;
     border-radius: 30px 0 30px 30px;
@@ -60,10 +57,26 @@
             display: block;
         }
     }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        cursor: pointer;
+    }
+    &__cross{
+        fill: var(--main-color-text);
+    }
 }
 .menu-toggle__icon{
     @media screen and (max-width: 767px) {
-        margin: 22px 0 22px auto;
+        
     }
 }
 .nav{
@@ -101,18 +114,7 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-    @media screen and (min-width: 768px) {
-        // margin-right: 32px;
-    }
-    @media screen and (min-width: 1280px) {
-        // margin-right: 16px;
-    }
 }
-// .mobile-menu{
-//     @media screen and (max-width: 767px) {
-//         display: none;
-//     }
-// }
 .mobile-nav__list {
     list-style: none;
 }
@@ -121,12 +123,15 @@
     color: var(--color-black);
     text-decoration: none;
     padding: 16px;
+    &:active{
+        background-color: var(--active-color);
+    }
 }
 .mobile-nav__item{
     background-color: transparent;
     transition: background-color var(--transition);
-    &:hover,
-    &:focus {
-        background-color: var(--active-color);
-    }
+    // &:hover,
+    // &:focus {
+    //     background-color: var(--active-color);
+    // }
 }
