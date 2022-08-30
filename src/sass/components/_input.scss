@@ -1,27 +1,41 @@
-.input-sub {
-    width: 279px;
-    height: 42px;
+.form__input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     border: 1px solid var(--yellow-main-color);
     border-radius: 30px;
-    background: var(--backgraund-color-second);
-    font-size: 12px;
-    line-height: calc(18 / 12);
-    color: var(--color-text-input);
     padding: 12px;
+    margin-bottom: 4px;
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color var(--transition);
 
     @media screen and (min-width: 768px) {
         width: 395px;
     }
 }
 
-.input-sub-modifire{
-    display: block;
-    width: 100%;
-    margin-top: 12px;
+.form__input::placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+    border-color: var(--color-text-input);
+}
 
-    @media screen and (min-width: 768px) {
-        width: 279px;
-        margin-top: 0px;
-    }
+.form__input:not(:placeholder-shown):required:valid {
+    border-color: var(--color-link);
+}
 
+.form__input:not(:placeholder-shown):required:invalid {
+    border-color: var(--input-eror);
+}
+
+.form__input:not(:placeholder-shown):required:invalid+.form__input--notification {
+    opacity: 1;
+}
+
+.form__input--notification {
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--input-eror);
+    opacity: 0;
 }
