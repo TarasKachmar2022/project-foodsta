@@ -1,23 +1,25 @@
 :root {
-    // Colors styles
-    --main-color-text: #2C2C2C; //main color text
-    --active-color: #BBF330; //hover and active text and defolt button
-    --color-text-input: #505050; //Color text placeholder input
-    --onhover-active-color: #B5FF00; // hover and focus button
-    --onhover-active-color-dark: #597D00; // hover and focus dark color
-    --yellow-main-color: #FFE550; // Yellow main color
-    --backgraund-color: #FEFEFE; // Backgraund color
-    --color-link: #7EB101; //Color links
-    --color-black: #000000; //menu in footer
-    --backgraund-color-second: #FFFFFF; //Backgraund color pagination
+  // Colors styles
+  --main-color-text: #2c2c2c; //main color text
+  --active-color: #bbf330; //hover and active text and defolt button
+  --color-text-input: #505050; //Color text placeholder input
+  --onhover-active-color: #b5ff00; // hover and focus button
+  --onhover-active-color-dark: #597d00; // hover and focus dark color
+  --yellow-main-color: #ffe550; // Yellow main color
+  --backgraund-color: #fefefe; // Backgraund color
+  --color-link: #7eb101; //Color links
+  --color-black: #000000; //menu in footer
+  --backgraund-color-second: #ffffff; //Backgraund color pagination
+  --background-backdrop: rgba(94, 99, 99, 0.7);
+  --color-placeholder: #c4c4c4;
 
-    //Input
-    --input-eror: #FF705D; // Eror input
+  //Input
+  --input-eror: #ff705d; // Eror input
 
-    // card-set
-    --indent: 30px;
-    --items: 1;
+  // card-set
+  --indent: 30px;
+  --items: 1;
 
-    // transition 
-    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

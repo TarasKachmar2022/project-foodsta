@@ -1,0 +1,58 @@
+<!-- Modal -->
+<div class="backdrop backdrop--is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal__btn" data-modal-close>
+      <svg width="24" height="24" class="modal__btn-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form" id="form">
+      <strong class="modal-form__title">Order Form</strong>
+      <div class="modal-form__content" role="group">
+        <label class="modal-form__group">
+          <span class="modal-form__label">Name</span>
+          <span class="modal-form__wrap">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-form__input"
+              placeholder="Your name"
+              aut
+            />
+          </span>
+        </label>
+
+        <label class="modal-form__group">
+          <span class="modal-form__label">Phone number</span>
+          <span class="modal-form__wrap">
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="modal-form__input phone-mask"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </span>
+        </label>
+
+        <label class="modal-form__group">
+          <span class="modal-form__label">E-mail</span>
+          <span class="modal-form__wrap">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="modal-form__input"
+              placeholder="example@gmail.com"
+            />
+          </span>
+        </label>
+      </div>
+      <button class="btn btn-white modal-form__btn" id="submit" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
