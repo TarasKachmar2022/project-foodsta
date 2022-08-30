@@ -1,28 +1,180 @@
 <!-- Kurka Vadim  -->
-<section class="offerings">
-  <div class="container">
-    <h2>What’s Special About Our Offerings</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat
-    </p>
-    <ul class="offerings-list">
-      <li class="offerings-list__item">
-        <h3 class="offerings-list__title">Fasest Delivery</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros
-        </p>
-      </li>
-      <li class="offerings-list__item">
-        <h3 class="offerings-list__title">Easy to order</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-    </ul>
-    <button type="button">Order Now</button>
+<section class="offerings section">
+  <div class="container offerings__container">
+    <div class="offerings__img">
+      <ul class="offerings__img-list list">
+        <li class="offerings__img-item">
+          <picture>
+            <!-- desktop screen -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                images/offerings/apple@1x_lg.webp 1x,
+                images/offerings/apple@2x_lg.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                images/offerings/apple@1x_lg.png 1x,
+                images/offerings/apple@2x_lg.png 2x
+              "
+              type="image/png"
+            />
+
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-1@1x_md.webp 1x,
+                images/offerings/apple-1@2x_md.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-1@1x_md.png 1x,
+                images/offerings/apple-1@2x_md.png 2x
+              "
+              type="image/png"
+            />
+
+            <!-- mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                images/offerings/apple@1x_sm.webp 1x,
+                images/offerings/apple@2x_sm.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                images/offerings/apple@1x_sm.png 1x,
+                images/offerings/apple@2x_sm.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="images/offerings/apple@1x_sm.png"
+              alt="apple"
+              class="offerings__img"
+              width="280"
+              height="309"
+            />
+          </picture>
+        </li>
+        <li class="offerings__img-item offerings__img--tablet">
+          <picture>
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-2@1x_md.webp 1x,
+                images/offerings/apple-2@2x_md.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-2@1x_md.png 1x,
+                images/offerings/apple-2@2x_md.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              src="images/offerings/apple-2@1x_md.png"
+              alt="apple"
+              class="offerings__img"
+              width="166"
+              height="211"
+            />
+          </picture>
+        </li>
+        <li class="offerings__img-item offerings__img--tablet">
+          <picture>
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-3@1x_md.webp 1x,
+                images/offerings/apple-3@2x_md.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                images/offerings/apple-3@1x_md.png 1x,
+                images/offerings/apple-3@2x_md.png 2x
+              "
+              type="image/png"
+            />
+
+            <img
+              src="images/offerings/apple-3@1x_md.png"
+              alt="apple"
+              class="offerings__img"
+              width="108"
+              height="136"
+            />
+          </picture>
+        </li>
+      </ul>
+    </div>
+    <div class="offerings__wrap">
+      <h2 class="section-title">What’s Special About Our Offerings</h2>
+      <p class="offerings__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat
+      </p>
+
+      <ul class="offerings-list list card-set">
+        <li class="offerings-list__item card-set-item">
+          <div class="offerings__icon-wrap">
+            <svg class="offerins__icon" width="32" height="32">
+              <use href="./images/sprite.svg#rocket"></use>
+            </svg>
+          </div>
+          <h3 class="offerings-list__title">Fasest Delivery</h3>
+          <p class="offerings-list__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros
+          </p>
+        </li>
+        <li class="offerings-list__item card-set-item">
+          <div class="offerings__icon-wrap">
+            <svg class="offerins__icon" width="32" height="32">
+              <use href="./images/sprite.svg#touch"></use>
+            </svg>
+          </div>
+          <h3 class="offerings-list__title">Easy to order</h3>
+          <p class="offerings-list__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <button class="offerings__btn btn-white btn" type="button">
+        Order Now
+      </button>
+      <a href="#" class="offerings__link link"
+        >Read More
+        <svg class="offerins__icon-link" width="14" height="14">
+          <use href="./images/sprite.svg#icon-arrow-link"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>

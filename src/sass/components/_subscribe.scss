@@ -1,1 +1,70 @@
-
+.subscribe{
+    position: relative;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 15px;
+        top: -45px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 17px;
+        top: -83px;
+    }
+    @media screen and (min-width: 1280px) {
+        top: -73px;
+    }
+}
+.subscribe__box{
+    @media screen and (min-width: 1280px) {    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    }
+}
+.subscribe__image {
+    width: 161px;
+    height: 78px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    @media screen and (min-width: 768px) {
+        width: 281px;
+        height: 136px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 546px;
+        height: 266px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+.subscribe__title {
+    margin-bottom: 20px;
+}
+.subscribe__descr {
+    max-width: 656px;
+    margin-bottom: 40px;
+}
+.form {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.form__wrapper {
+    margin-bottom: 1px;
+    @media screen and (min-width: 480px) {
+    margin-bottom: 0;
+    }
+}
+.btn.btn--changed{
+    display: block;
+    padding: 11px 22px;
+    margin-left: auto;
+    max-width: 106px;
+    max-height: 42px;
+    transition: background-color var(--transition);
+    @media screen and (min-width: 768px) {
+        margin-left: 18px;
+    }
+}

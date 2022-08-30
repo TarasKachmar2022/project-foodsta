@@ -1,56 +1,64 @@
-.footer{
-    width: 100%;
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-size: cover;
+    background-image: url("../images/footer/mob/apple-mob@1.png"), url("../images/footer/mob/fructs-mob@1.png"), url("../images/footer/mob/orange-mob@1.png");
 
-    background-image: url(../images/footer/footer-bg@1x_sm.png);
-    
-    background-position: bottom;
+
+    background-size: 110px 116px,
+        253px 66px,
+        104px 259px;
+    background-position: left 0 top 132px,
+        bottom 0 center,
+        right 0 top 0;
     background-repeat: no-repeat;
-
     box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/footer/footer-bg@2x_sm.png);
-        }
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/footer/mob/apple-mob@2x.png"), url("../images/footer/mob/fructs-mob@2x.png"), url("../images/footer/mob/orange-mob@2x.png");
+    }
 
     @media screen and (min-width: 768px) {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        background-image: url("../images/footer/tab/img5@1.png"), url("../images/footer/tab/img6@1.png"), url("../images/footer/tab/img4@1.png"), url("../images/footer/tab/img1@1.png"), url("../images/footer/tab/img6@1.png"), url("../images/footer/tab/img3@1.png"), url("../images/footer/tab/orange-tab@1.png"), url("../images/footer/tab/overlay-tab@1.png");
 
-        background-image: url(../images/footer/footer-bg@1x_md.png);
-        
+        background-size: 184px, 168px, 153px, 221px, 171px, 170px, 96px, 203px;
+        background-position: bottom 0 left -17px, left 136px bottom 0, left 197px bottom 0, bottom 0 left 314px, bottom 0 right 94px, bottom 0 right 0, right 0 top 35px, right 0 top 0;
+
         @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/footer/footer-bg@2x_md.png);
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/footer/tab/img5@2x.png"), url("../images/footer/tab/img6@2x.png"), url("../images/footer/tab/img4@2x.png"), url("../images/footer/tab/img1@2x.png"), url("../images/footer/tab/img6@2x.png"), url("../images/footer/tab/img3@2x.png"), url("../images/footer/tab/orange-tab@2x.png"),
+                url("../images/footer/tab/overlay-tab@2x.png");
+        }
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url("../images/footer/desc/img5@1.png"), url("../images/footer/desc/img8@1.png"), url("../images/footer/desc/img1@1.png"), url("../images/footer/desc/img3@1.png"), url("../images/footer/desc/img4@1.png"), url("../images/footer/desc/img2@1.png"), url("../images/footer/desc/img6@1.png"), url("../images/footer/desc/img7@1.png");
+
+        background-size: 195px, 178px, 163px, 380px, 526px, 235px, 182px, 181px;
+        background-position: bottom 0 left 53px, bottom 0 left 216px, bottom 0 left 280px, bottom 0 center, bottom 0 left 340px, bottom 0 right 266px, bottom 0 right 118px, bottom 0 right 0;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/footer/desc/img5@2x.png"), url("../images/footer/desc/img8@2x.png"), url("../images/footer/desc/img1@2x.png"), url("../images/footer/desc/img3@2x.png"), url("../images/footer/desc/img4@2x.png"), url("../images/footer/desc/img2@2x.png"), url("../images/footer/desc/img6@2x.png"), url("../images/footer/desc/img7@2x.png");
         }
     }
 
-    @media screen and (min-width: 1280px) { 
-        
-        background-image: url(../images/footer/footer-bg@1x_lg.png);
-    
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(../images/footer/footer-bg@2x_lg.png);
-        }
-    }
 }
 
-.footer__main{
- 
-    @media screen and (min-width: 1280px){
+.footer__main {
+
+    @media screen and (min-width: 1280px) {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
     }
 }
-.footer__block{
+
+.footer__block {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -69,32 +77,34 @@
     }
 }
 
-.footer__logo{
+.footer__logo {
 
     @media screen and (max-width: 767px) {
         flex-basis: 50%;
     }
+
     @media screen and (min-width: 1280px) {
         width: 100%;
         margin-left: auto;
     }
 
 }
-.footer__menu{
+
+.footer__menu {
     @media screen and (max-width: 767px) {
         flex-basis: 50%;
     }
 }
 
 
-.footer__bottom{
+.footer__bottom {
     margin-top: 60px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         margin-top: 100px;
     }
 
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
         margin-top: 80px;
     }
 }
@@ -113,21 +123,21 @@
     }
 }
 
-.footer-subscribe__title{
+.footer-subscribe__title {
     font-weight: 500;
     line-height: calc(21 / 14);
 
     color: var(--main-color-text);
 }
 
-.footer-subscribe__text{
+.footer-subscribe__text {
 
     font-size: 10px;
     line-height: calc(12 / 10);
     color: var(--main-color-text);
     margin-top: 20px;
 
-    & a{
+    & a {
         color: var(--color-link);
     }
 
