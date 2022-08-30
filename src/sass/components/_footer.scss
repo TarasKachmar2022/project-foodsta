@@ -80,7 +80,7 @@
 .footer__logo {
 
     @media screen and (max-width: 767px) {
-        flex-basis: 50%;
+        margin-right: 81px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -90,11 +90,11 @@
 
 }
 
-.footer__menu {
-    @media screen and (max-width: 767px) {
-        flex-basis: 50%;
-    }
-}
+// .footer__menu {
+//     @media screen and (max-width: 767px) {
+//         flex-basis: 50%;
+//     }
+// }
 
 
 .footer__bottom {
@@ -123,12 +123,25 @@
     }
 }
 
+.subscribe__form-modifire {
+    margin-top: 12px;
+
+}
+
 .footer-subscribe__title {
     font-weight: 500;
     line-height: calc(21 / 14);
 
     color: var(--main-color-text);
 }
+
+.footer-subscribe__input {
+    margin-top: 12px;
+    margin-bottom: 0;
+
+}
+
+
 
 .footer-subscribe__text {
 
