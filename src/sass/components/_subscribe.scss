@@ -1,12 +1,16 @@
 .subscribe{
+    position: relative;
     @media screen and (max-width: 767px) {
         padding-bottom: 60px;
+        top: -45px;
     }
     @media screen and (min-width: 768px) {
         padding-bottom: 100px;
+        top: -83px;
     }
     @media screen and (min-width: 1280px) {
         padding-bottom: 64px;
+        top: -73px;
     }
     
 }
@@ -22,10 +26,6 @@
     height: 78px;
     margin: 0 auto;
     margin-bottom: 17px;
-    @media screen and (min-width: 480px) {
-        margin-left: auto;
-        margin-right: 0;
-    }
     @media screen and (min-width: 768px) {
         width: 281px;
         height: 136px;
@@ -61,10 +61,10 @@
 .form__input{
     display: block;
     margin: 0 auto;
-    width: 278px;
+    width: 279px;
     border: 1px solid var(--yellow-main-color);
     border-radius: 30px;
-    padding: 12px 11px;
+    padding: 12px;
     margin-bottom: 4px;
     background-color: transparent;
     outline: transparent;
@@ -88,9 +88,9 @@
 .form__input:not(:placeholder-shown):required:invalid +.form__input--notification{
     opacity: 1;
 }
-.btn--changed{
+.btn.btn--changed{
     display: block;
-    padding: 10px 22px;
+    padding: 11px 22px;
     margin-left: auto;
     max-width: 106px;
     max-height: 42px;
