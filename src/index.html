@@ -40,6 +40,16 @@
         });
       });
     </script>
+     <script type="text/javascript">
+      $(document).ready(function () {
+        $('#menu-mobile').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
