@@ -1,5 +1,11 @@
 .header {
     box-shadow: 0px 4px 24px 0px #6969691A;
+    position: fixed;
+    width: 100%;
+    background-color: var(--backgraund-color);
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
 .header-container {
