@@ -1,8 +1,6 @@
-.menu-nav{
+.menu-nav {}
 
-}
-
-.menu-nav__list{
+.menu-nav__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -13,18 +11,17 @@
     }
 }
 
-.menu-nav__item{
+.menu-nav__item {}
 
-}
-
-.menu-nav__link{
+.menu-nav__link {
     color: var(--color-black);
 
-    @media screen and (min-width: 1280px) {  
+    @media screen and (min-width: 1280px) {
         color: var(--main-color-text);
     }
-    &:hover, &:focus{
-        text-decoration-line: underline;
+
+    &:hover,
+    &:focus {
         color: var(--active-color);
     }
 }
