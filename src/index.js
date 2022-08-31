@@ -72,7 +72,7 @@ let validation = new JustValidate('#form', {
 });
 
 let selector = document.querySelector('#phone');
-let im = new Inputmask('+38(09)999-99-99');
+let im = new Inputmask('+38(099)999-99-99');
 im.mask(selector);
 
 validation
@@ -101,14 +101,14 @@ validation
     {
       validator: value => {
         const phone = selector.inputmask.unmaskedvalue();
-        return Boolean(Number(phone) && phone.length > 0);
+        return Boolean(Number(phone) && phone.length > 8);
       },
       errorMessage: 'This phone must be in the format  099 000 00 00',
     },
     {
       validator: value => {
         const phone = selector.inputmask.unmaskedvalue();
-        return Boolean(Number(phone) && phone.length === 11);
+        return Boolean(Number(phone) && phone.length === 9);
       },
       errorMessage: 'This phone must be in the format  099 000 00 00',
     },
