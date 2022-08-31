@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Delivery of the most delicious food">
+    <meta name="description" content="Delivery of the most delicious food" />
     <title>Page title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,19 +22,24 @@
     />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script type="module" src="./js/inputmask.min.js"></script>
     <!-- <script src="./js/mobile-menu.js"></script> -->
     <script type="module" src="./index.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
     <script type="text/javascript">
- $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
+      $(document).ready(function () {
+        $('#menu').on('click', 'a', function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-</script>
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -44,5 +49,6 @@
     <include src="./partials/customers-say.html"></include>
     <include src="./partials/subscribe.html"></include>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
   </body>
 </html>

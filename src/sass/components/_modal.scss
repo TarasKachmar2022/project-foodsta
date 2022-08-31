@@ -1,0 +1,129 @@
+// Modal window
+
+.modal {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%);
+
+  max-width: 458px;
+  width: 100%;
+  padding: 32px 20px;
+  text-align: center;
+
+  background-color: var(--yellow-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+
+  transition: transform var(--transition);
+
+  @media screen and (min-width: 768px) {
+    top: 98px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 129px;
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: transparent;
+  background-color: var(--backgraund-color-second);
+  cursor: pointer;
+}
+
+// Modal form
+.modal-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-form__title {
+  display: block;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  color: var(--main-color-text);
+  margin-bottom: 20px;
+}
+
+.modal-form__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.modal-form__group {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-form__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  margin-left: 12px;
+}
+
+.modal-form__input {
+  min-width: 280px;
+  width: 100%;
+  height: 48px;
+  padding: 14px 12px;
+
+  background-color: var(--backgraund-color-second);
+  border: 1px solid var(--color-link);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  @media screen and (min-width: 768px) {
+    min-width: 394px;
+  }
+
+  &:focus:invalid {
+    border: 1px solid var(--input-eror);
+  }
+}
+
+.modal-form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--color-placeholder);
+}
+
+.modal-form__btn {
+  border: 2px solid var(--color-link);
+  min-width: 106px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid var(--color-link);
+    background-color: var(--active-color);
+  }
+}
